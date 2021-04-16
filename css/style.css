@@ -72,7 +72,7 @@ body
     margin-bottom: 20px;
     color: #DA1E37;
 }
-.text-about button,.skill button,.form button
+.text-about button,.skill button,.form button,.gallery-img-box button
 {
     border: none;
     outline: none;
@@ -906,7 +906,17 @@ textarea
       margin-left: 10px;
   }
 }
-
+.gallery-img-box button 
+{
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.gallery-img-box button a 
+{
+    color: #fff;
+}
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
     .text-about
