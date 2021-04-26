@@ -6,6 +6,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body
+{
+    min-height: 100vh;
+}
 .despear 
 {
     display: none  !important;
@@ -28,7 +32,7 @@
     align-items: center;
     flex-direction: row;
 }
-.loader .box
+.loader .boxs
 {
     display: flex;
     justify-content: center;
