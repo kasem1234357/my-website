@@ -64,7 +64,7 @@ body
 {
     background: #2a9d8f;
     transform-origin: left;
-    animation: animate2 4s linear  infinite;
+    animation: animate22 4s linear  infinite;
 }
 @keyframes animate 
 {
@@ -81,7 +81,7 @@ body
         transform: rotate(360deg) scale(0);
     }
 }
-@keyframes animate2
+@keyframes animate22
 {
     0%
     {
