@@ -1,6 +1,6 @@
 ar loader = document.querySelector(".loader")
 
-document.addEventListener('DOMContentLoaded',vanish);
+window.addEventListener('load',vanish);
 
 function vanish() {
  loader.classList.add("despear");
