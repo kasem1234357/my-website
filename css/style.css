@@ -6,6 +6,147 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.despear 
+{
+    display: none  !important;
+}
+.loader
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: #2b2d42;
+    flex-direction: column;
+}
+.preloader 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.loader .box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+.s 
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #000;
+    
+}
+.loader h1 
+{
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.one 
+{
+    background: #e76f51;
+    transform-origin: right;
+    animation: animate 4s linear infinite;
+}
+.two 
+{
+    background: #2a9d8f;
+    transform-origin: left;
+    animation: animate2 4s linear  infinite;
+}
+@keyframes animate 
+{
+    0% 
+    {
+        transform: rotate(0) scale(0);
+    }
+    50%
+    {
+        transform: rotate(180deg) scale(1);
+    }
+    100% 
+    {
+        transform: rotate(360deg) scale(0);
+    }
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: rotate(0) scale(1);
+    }
+    50%
+    {
+        transform: rotate(180deg) scale(0);
+    }
+    100% 
+    {
+        transform: rotate(360deg) scale(1);
+    }
+}
+.preloader-dots {
+    height: 50px;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+  
+  .preloader-dots .dot {
+    display: inline-block;
+    background: #fff;
+    height: 8px;
+    width: 8px;
+    opacity: 0.3;
+    border-radius: 50%;
+    animation: moveit 1.8s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: .15s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: .3s;
+  }
+  
+  .dot:nth-child(4) {
+    animation-delay: .45s;
+  }
+  
+  .dot:nth-child(5) {
+    animation-delay: .6s;
+  }
+  
+  @keyframes moveit {
+    0% {
+      transform: translateY(0px);
+    }
+    35% {
+      transform: translateY(0px);
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.8;
+    }
+    70% {
+      transform: translateY(3px);
+      opacity: 0.8;
+    }
+    85% {
+      transform: translateY(-3px);
+    }
+  }
 .head
 {
     background: url('../images/background.jpg');
