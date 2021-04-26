@@ -1,3 +1,11 @@
+ar loader = document.querySelector(".loader")
+
+document.addEventListener('DOMContentLoaded',vanish);
+
+function vanish() {
+ loader.classList.add("despear");
+}
+
 // writer effect------------------//
 class TypeWriter {
   constructor(txtElement, words, wait) {
